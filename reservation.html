@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-li small-logo">
+        <h1>SABOR</h1>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./menu.html">menu</a>
+        </li>
+        <li class="logo-li large-logo">
+          <a href="./index.html"> <h1>SABOR</h1></a>
+        </li>
+
+        <li>
+          <a href="./team.html">our team</a>
+        </li>
+        <li>
+          <a href="./reservation.html">Reservation</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div id="main-container">
+        <div id="main">
+      <div class="reservation-container">
+        <h1 class="brand">Make A Reservation</h1>
+        <div class="reservation-wrapper" >
+          <div class="reservation-info">
+            <h3>Sabor Restaurant</h3>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i></i> 100 Queen St W, Toronto, ON M5H 2N2</li>
+              <li><i class="fas fa-phone"></i>  555.555.5555</li>
+              <li><i class="fas fa-envelope"></i> 555.555.5555</li>
+             
+            </ul>
+          </div>
+          <div class="reservation">
+            <form action="">
+              <p>
+                <label>Date</label>
+                <input type="date" id="start" name="trip-start"
+         value="2018-07-22"
+         min="2018-01-01" max="2018-12-31">
+              </p>
+              <p>
+                <label>Time</label>
+                <input type="time" id="appt" name="appt"
+                min="09:00" max="18:00" required>
+              </p>
+              <p>
+                <label>Full Name</label>
+                <input type="text " name="name" />
+              </p>
+              <p>
+                <label>Phone Number</label> 
+  
+    <input type="tel" id="phone" name="phone" placeholder="Format: 555-555-5555" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+              </p>
+              <p>
+              <label>Number of People:</label>
+  <input type="number" id="tentacles" name="tentacles"
+         min="10" max="20">
+        </p>
+              <p class="full">
+                <button id="send-button">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                        <h4>© 2021 RESTAURANT SABOR ALL RIGHTS RESERVED</h4>
+                    </div>
+                </div>
+  
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4> Sabor</h4>
+                      
+                    </div>
+                </div>
+  
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4> Info</h4>
+                        <ul>
+                          <li><i class="fas fa-map-marker-alt"></i> 100 Queen St W, Toronto, ON M5H 2N2 </li>
+                            <li></li>
+                            <li><i class="fas fa-clock"></i> Fri-Sat: 2pm-12am </li>
+  
+                          <li><i class="fas fa-phone"></i> 555.555.5555</li>
+                          <li><i class="fas fa-envelope"></i> info@sabor.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+                    <div class="second2">
+                        <a href="#" target="_blank"><i class="fab fa-instagram fa-2x margin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x margin"></i></h3
+                          ></a>
+                        <a href="#" target="_blank"> <i class="fab fa-twitter fa-2x margin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok fa-2x margin" ></i></a>
+  
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    </body>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/ab9411b673.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 1000,
+      });
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>
